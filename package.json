@@ -1,0 +1,9 @@
+{
+  "name": "vending-machine-react-electron",
+  "version": "0.0.1",
+  "description": "React.jsとElectronで作る自販機",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "license": "MIT"
+}
