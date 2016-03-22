@@ -3,7 +3,11 @@
   "version": "0.0.1",
   "description": "React.jsとElectronで作る自販機",
   "scripts": {
+    "start": "electron .",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "license": "MIT"
+  "license": "MIT",
+  "devDependencies": {
+    "electron-prebuilt": "^0.37.2"
+  }
 }
