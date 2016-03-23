@@ -3,9 +3,15 @@
 <head>
   <meta charset="UTF-8">
   <title>自販機</title>
+  <script>
+    window.onload = () => {
+      require('babel-register')();
+      require('./main');
+    }
+  </script>
 </head>
 <body>
-  自販機
+  <div id='vending-machine'></div>
 </body>
 </html>
 
