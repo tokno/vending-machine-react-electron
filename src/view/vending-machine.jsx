@@ -3,16 +3,12 @@
 var React = require('react');
 
 module.exports = React.createClass({
-  getInitialState() {
-    return {
-      amountOfMoney: 0,
-    }
-  },
-
   render() {
+    var vendingachine = this.props.vendingMachine;
+
     return (
         <div>
-          投入金額: {this.state.amountOfMoney}円
+          投入金額: {vendingachine.amountOfMoney}円
         </div>
     );
   },
