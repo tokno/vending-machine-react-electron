@@ -28,8 +28,6 @@ module.exports = React.createClass({
 
   _onChange(event) {
     var value = +event.target.value;
-    
-    if (isNaN(value)) return;
 
     this.setState({
       value: isNaN(value) ? 0 : value
