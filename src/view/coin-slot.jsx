@@ -14,8 +14,6 @@ module.exports = React.createClass({
     var onCoinInserted = this.props.onCoinInserted || noop;
     var value = this.state.value;
 
-    if (isNaN(value)) return;
-
     onCoinInserted(value);
   },
 
@@ -30,11 +28,11 @@ module.exports = React.createClass({
 
   _onChange(event) {
     var value = +event.target.value;
-
+    
     if (isNaN(value)) return;
 
     this.setState({
-      value: value,
+      value: isNaN(value) ? 0 : value
     });
   },
 });
